@@ -33,7 +33,7 @@ powerData <- subset(powerData, (powerData$Date == "2007-02-01" | powerData$Date 
 # reactive power over the sample time period.
 png(filename="plot4.png")
 par(mfrow=c(2,2), mar=c(4,4,2,2))
-plot(powerData$DateTime, powerData$Global_active_power, xlab="", ylab="Global Active Power (kilowatts)", type="l")
+plot(powerData$DateTime, powerData$Global_active_power, xlab="", ylab="Global Active Power", type="l")
 plot(powerData$DateTime, powerData$Voltage, xlab="datetime", ylab="Voltage", type="l")
 plot(powerData$DateTime, powerData$Sub_metering_1, 
      xlab="", ylab="Energy sub metering", type="n")
